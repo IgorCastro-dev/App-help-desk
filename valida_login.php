@@ -1,4 +1,5 @@
 <?php
+session_start();
 $usuario_autenticado = false;
 $usuarios=[['email'=>'igorjunqueira1@gmail.com','senha'=>'321']];
 foreach($usuarios as $user){
@@ -7,8 +8,9 @@ foreach($usuarios as $user){
     }
 }
     if($usuario_autenticado){
-        echo 'positivo';
+        $_SESSION['autenticado'] = 'SIM';
     }else{
+        $_SESSION['autenticado'] = 'NAO';
         header('Location: index.php?login=erro');
     }
 ?>
