@@ -1,2 +1,8 @@
 # App-help-desk
- site para treinar login
+ site para treinar autenticação de login
+
+# Icones
+📦 nova funcionalidade
+🆙 atualização
+🐞 correção de bug
+🏁 release
